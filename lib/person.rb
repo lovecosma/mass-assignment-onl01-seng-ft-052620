@@ -1,4 +1,4 @@
-class Person
+class Person :person_attributes
 attr_accessor
 def initialize(person_attributes)
 
