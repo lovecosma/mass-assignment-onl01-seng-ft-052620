@@ -1,6 +1,6 @@
 class Person
 attr_accessor :person_attributes
-def initialize(person_attributes)
-@person_attributes = person_attributes
-end
+  def initialize(attributes)
+      attributes.each {|key, value| self.send(("#{key}="), value)}
+    end
 end
